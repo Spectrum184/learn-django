@@ -12,9 +12,11 @@
 <table border="1">
     {% for m in members  %}
     <tr>
+        <td><a href="update/{{m.id}}">{{m.id}}</a></td>
         <td>{{m.id}}</td>
         <td>{{m.first_name}}</td>
         <td>{{m.last_name}}</td>
+        <td><a href="delete/{{ m.id }}">delete</a></td>
     </tr>
     {% endfor %}
 </table>
